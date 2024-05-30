@@ -1,3 +1,16 @@
 server:
   port: ${PORT:8862}
 message: Configuración de producto en el servidor levantado!
+Spring:
+  datasource:
+    driver-class-nam: com.mysql.cj.jdbc.Driver
+    password: 12345678
+    url: jdbc:mysql://localhost:3306/crudcloud?serverTimezone=UTC
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+      database-platform: org.hibernate.dialect.MySQLDialect
+  cloud:
+    config:
+      url: http://localhost:8860
