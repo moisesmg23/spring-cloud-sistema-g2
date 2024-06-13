@@ -5,7 +5,7 @@ Spring:
   datasource:
     driver-class-nam: com.mysql.cj.jdbc.Driver
     password: 12345678
-    url: jdbc:mysql://localhost:3306/crudcloud?serverTimezone=UTC
+    uri: jdbc:mysql://localhost:3306/crudcloud?serverTimezone=UTC
     username: root
   jpa:
     hibernate:
