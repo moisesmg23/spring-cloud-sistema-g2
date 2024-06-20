@@ -14,3 +14,9 @@ spring:
   cloud:
     config:
       uri: http://localhost:8860
+eureka:
+  client:
+    #fetch-registry: false
+    register-with-eureka: false
+    serviceurl:
+      defaultZone: http://localhost:8850/eureka/
